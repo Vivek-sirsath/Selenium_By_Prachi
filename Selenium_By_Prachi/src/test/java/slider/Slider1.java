@@ -20,7 +20,7 @@ public class Slider1 {
 		
 		WebElement slider =driver.findElement(By.xpath("//span[@tabindex='0']"));
 	
-		for(int i=0; i<=50; i++) {        // 50 is How many times we want to slide the slider e.g. 40,70,95 %
+		for(int i=0; i<=50; i++) {        // 50 is the times that, How many times we want to slide the slider e.g. 40,70,95 %
 		slider.sendKeys(Keys.ARROW_RIGHT);
 		System.out.println("slider action performed");
 	    }
