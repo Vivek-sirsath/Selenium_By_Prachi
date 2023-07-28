@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-28T13:38:29Z" name="Suite" finished-at="2023-07-28T13:38:50Z" duration-ms="21606">
+  <suite started-at="2023-07-28T20:17:20Z" name="Suite" finished-at="2023-07-28T20:17:45Z" duration-ms="25731">
     <groups>
     </groups>
-    <test started-at="2023-07-28T13:38:29Z" name="Test1" finished-at="2023-07-28T13:38:50Z" duration-ms="21606">
-      <class name="testNG.ParallelTestingClass2">
-        <test-method signature="verifyTitle()[pri:0, instance:testNG.ParallelTestingClass2@68f4865]" started-at="2023-07-28T13:38:29Z" name="verifyTitle" finished-at="2023-07-28T13:38:43Z" duration-ms="14317" status="PASS">
+    <test started-at="2023-07-28T20:17:20Z" name="TestOnChrome" finished-at="2023-07-28T20:17:30Z" duration-ms="10612">
+      <class name="crossBrowserTestingPackage.CrossBrowserTesting">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@6ee4d9ab]" started-at="2023-07-28T20:17:20Z" name="launchBrowser" finished-at="2023-07-28T20:17:23Z" duration-ms="3317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyTitle()[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@6ee4d9ab]" started-at="2023-07-28T20:17:23Z" name="verifyTitle" finished-at="2023-07-28T20:17:30Z" duration-ms="6836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-      </class> <!-- testNG.ParallelTestingClass2 -->
-      <class name="testNG.ParallelTestingClass1">
-        <test-method signature="verifyLogo()[pri:0, instance:testNG.ParallelTestingClass1@5717c37]" started-at="2023-07-28T13:38:29Z" name="verifyLogo" finished-at="2023-07-28T13:38:41Z" duration-ms="12285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@6ee4d9ab]" started-at="2023-07-28T20:17:30Z" name="tearDown" finished-at="2023-07-28T20:17:30Z" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method signature="verifyTitle()[pri:0, instance:testNG.ParallelTestingClass1@5717c37]" started-at="2023-07-28T13:38:41Z" name="verifyTitle" finished-at="2023-07-28T13:38:50Z" duration-ms="9261" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- crossBrowserTestingPackage.CrossBrowserTesting -->
+    </test> <!-- TestOnChrome -->
+    <test started-at="2023-07-28T20:17:20Z" name="TestOnFirefox" finished-at="2023-07-28T20:17:45Z" duration-ms="25731">
+      <class name="crossBrowserTestingPackage.CrossBrowserTesting">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@571c5681]" started-at="2023-07-28T20:17:20Z" name="launchBrowser" finished-at="2023-07-28T20:17:33Z" duration-ms="13104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyTitle()[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@571c5681]" started-at="2023-07-28T20:17:33Z" name="verifyTitle" finished-at="2023-07-28T20:17:41Z" duration-ms="8187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-      </class> <!-- testNG.ParallelTestingClass1 -->
-    </test> <!-- Test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:crossBrowserTestingPackage.CrossBrowserTesting@571c5681]" started-at="2023-07-28T20:17:41Z" name="tearDown" finished-at="2023-07-28T20:17:45Z" duration-ms="4398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- crossBrowserTestingPackage.CrossBrowserTesting -->
+    </test> <!-- TestOnFirefox -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="methods" name="Test1(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="msedge"/>
     <classes>
-      <class name="testNG.ParallelTestingClass1">
+      <class name="crossBrowserTestingPackage.CrossBrowserTesting">
         <methods>
-          <include name="verifyLogo"/>
+          <include name="tearDown"/>
+          <include name="verifyTitle"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testNG.ParallelTestingClass1 -->
+      </class> <!-- crossBrowserTestingPackage.CrossBrowserTesting -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
