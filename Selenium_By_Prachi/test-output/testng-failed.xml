@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="ExtentReportsUsingITestListenerInterface.ExtentListenerClass"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="3" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="Test1(failed)">
     <classes>
-      <class name="ExtentReportsUsingITestListenerInterface.TestCaseClass">
+      <class name="testNG.ParallelTestingClass1">
         <methods>
-          <include name="testMethod5"/>
-          <include name="testMethod3"/>
-          <include name="testMethod2"/>
+          <include name="verifyLogo"/>
         </methods>
-      </class> <!-- ExtentReportsUsingITestListenerInterface.TestCaseClass -->
+      </class> <!-- testNG.ParallelTestingClass1 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
