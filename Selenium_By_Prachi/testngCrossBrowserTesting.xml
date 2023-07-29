@@ -15,4 +15,11 @@
     </classes>
   </test> <!-- Test -->
   
+ <!-- <test name="TestOnMsEdge">
+  <parameter name="browser" value="msedge"></parameter>
+    <classes>
+      <class name="crossBrowserTestingPackage.CrossBrowserTesting"/>
+    </classes>
+  </test> <- Test --> 
+  
 </suite> <!-- Suite -->

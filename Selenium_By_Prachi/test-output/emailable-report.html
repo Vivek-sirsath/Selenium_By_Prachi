@@ -9,14 +9,42 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">TestOnChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,612</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestOnFirefox</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">25,731</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">36,343</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestOnFirefox</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">1,074</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOnChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">13,600</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num">14,674</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m0">verifyTitle</a></td><td rowspan="1">1690575443545</td><td rowspan="1">6836</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestOnFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m1">verifyTitle</a></td><td rowspan="1">1690575453332</td><td rowspan="1">8187</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnFirefox &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m0">launchBrowser</a></td><td rowspan="1">1690603159837</td><td rowspan="1">912</td></tr><tr><th colspan="4">TestOnFirefox &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1690603160850</td><td rowspan="1">0</td></tr><tr><th colspan="4">TestOnFirefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m2">verifyTitle</a></td><td rowspan="1">1690603160838</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOnChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">crossBrowserTestingPackage.CrossBrowserTesting</td><td><a href="#m3">verifyTitle</a></td><td rowspan="1">1690603168701</td><td rowspan="1">4361</td></tr></tbody>
 </table>
-<h2>TestOnChrome</h2><h3 id="m0">crossBrowserTestingPackage.CrossBrowserTesting#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestOnFirefox</h2><h3 id="m1">crossBrowserTestingPackage.CrossBrowserTesting#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnFirefox</h2><h3 id="m0">crossBrowserTestingPackage.CrossBrowserTesting#launchBrowser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>msedge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at crossBrowserTestingPackage.CrossBrowserTesting.launchBrowser(CrossBrowserTesting.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.checkPreInstalledVersion(WebDriverManager.java:649)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:531)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">crossBrowserTestingPackage.CrossBrowserTesting#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">crossBrowserTestingPackage.CrossBrowserTesting#verifyTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at crossBrowserTestingPackage.CrossBrowserTesting.launchBrowser(CrossBrowserTesting.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: MicrosoftWebDriver.exe should be pre-installed in an elevated command prompt executing: dism /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0
+	at io.github.bonigarcia.wdm.WebDriverManager.checkPreInstalledVersion(WebDriverManager.java:649)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:531)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnChrome</h2><h3 id="m3">crossBrowserTestingPackage.CrossBrowserTesting#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
