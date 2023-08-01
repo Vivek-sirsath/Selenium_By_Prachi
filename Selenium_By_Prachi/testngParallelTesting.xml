@@ -15,6 +15,10 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<!-- <test name="Test2"> <classes> <class name="testNG.ParallelTestingClass1" 
-		/> <class name="testNG.ParallelTestingClass2" /> </classes> </test> Test -->
+<!-- <test name="Test2"> 
+	     <classes> 
+	        <class name="testNG.ParallelTestingClass1" /> 
+	        <class name="testNG.ParallelTestingClass2" /> 
+	     </classes> 
+	  </test> Test -->
 </suite> <!-- Suite -->
