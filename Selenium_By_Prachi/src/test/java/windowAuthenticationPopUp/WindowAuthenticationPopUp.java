@@ -1,7 +1,7 @@
 
 /*
  * How to handle window authentication pop-up?
- * We can not locate this using x path because it is not the web element
+ * We can not locate this using Xpath because it is not the web element
  * It is the windows pop-up.
  * 
  * This type of pop-up shows different GUI on different browsers
@@ -26,19 +26,18 @@ public class WindowAuthenticationPopUp {
 		// Launch chrome browser
 		System.setProperty("webdriver.chrome.driver", "E:\\Educational\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-
 		driver.manage().window().maximize();
-
+		
 		// URL - https://the-internet.herokuapp.com/basic_auth
 		// admin:admin = username:password
 		driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
-		
-		// Launch firefox browser
+
+		// Launch firefox browser (Will show different GUI on FireFox browser)
 		WebDriverManager.firefoxdriver().setup();
-		WebDriver ṁṇ = new FirefoxDriver();
-		
-		driver.manage().window().maximize();
-		driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+		WebDriver driver1 = new FirefoxDriver();
+
+		driver1.manage().window().maximize();
+		driver1.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 
 	}
 
