@@ -46,6 +46,8 @@ public class BasicExtentReport {
 
 	@Test
 	public void launchBrowser() {
+		
+		// Create test
 		test = reports.createTest("Launch browser and open url");
 		Assert.assertTrue(true); // Test Passed
 
@@ -53,12 +55,16 @@ public class BasicExtentReport {
 
 	@Test
 	public void verifyTitle() {
+		
+		// Create test
 		test = reports.createTest("Verify title");
 		Assert.assertTrue(false); // Test Failed
 	}
 
 	@Test
 	public void verifyLogo() {
+		
+		// Create test
 		test = reports.createTest("Verify logo");
 		Assert.assertTrue(true); // Test Passed
 	}
@@ -71,6 +77,8 @@ public class BasicExtentReport {
 
 	@Test
 	public void verifyUsername() {
+		
+		// Create test
 		test = reports.createTest("Verify Username");
 		Assert.assertTrue(true); // Test Passed
 
