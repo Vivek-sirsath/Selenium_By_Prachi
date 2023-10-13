@@ -12,6 +12,15 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+
+/* 
+   TestNG listener class listens to he events
+   We can use 'TestListenerAdapter class'
+   If we use this Adapter class we have to use 'extends' keyword
+   e.g. 
+       public class ExtentListenerClass extends TestListenerAdapter
+*/
+
 public class ExtentListenerClass implements ITestListener {
 
 	ExtentSparkReporter htmlReporter;
