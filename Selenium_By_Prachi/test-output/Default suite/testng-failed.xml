@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extentReportsPackage.BasicExtentReport">
+      <class name="ListBox.Test1">
         <methods>
-          <include name="getTestResult"/>
-          <include name="verifyTitle"/>
-          <include name="configureReport"/>
-          <include name="verifyEmail"/>
-          <include name="tearDown"/>
+          <include name="verifyPageTitle"/>
         </methods>
-      </class> <!-- extentReportsPackage.BasicExtentReport -->
+      </class> <!-- ListBox.Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
