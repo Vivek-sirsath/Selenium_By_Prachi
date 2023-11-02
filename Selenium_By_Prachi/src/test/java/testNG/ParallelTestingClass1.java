@@ -30,7 +30,8 @@ public class ParallelTestingClass1 {
 		Thread.sleep(3000);
 	}
 	
- @Test
+
+     @Test
 	public void verifyLogo() throws Exception {
 		
 		// Lauch chrome browser
