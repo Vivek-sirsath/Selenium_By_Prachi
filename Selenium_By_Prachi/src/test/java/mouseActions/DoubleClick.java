@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 public class DoubleClick {
 
@@ -24,7 +25,13 @@ public class DoubleClick {
 		Actions act = new Actions(driver);
 		act.doubleClick(doubleClkBtton).perform();
 		System.out.println("Double Click Done");
-
-
+		String doubleClickMessage = "You have done a double click";
+		WebElement msgText = driver.findElement(By.id("doubleClickMessage"));
+		
+		Assert.assertEquals(msgText.getText(), doubleClickMessage);
+		System.out.println("Message Text Verified");
+		
+		driver.quit();
+		
 	}
 }
