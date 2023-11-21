@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="TestOnFirefox(failed)">
-    <parameter name="browser" value="msedge"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ExtentReportsUsingITestListenerInterface.ExtentListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="crossBrowserTestingPackage.CrossBrowserTesting">
+      <class name="ExtentReportsUsingITestListenerInterface.TestCaseClass">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyTitle"/>
-          <include name="launchBrowser"/>
+          <include name="testMethod5"/>
+          <include name="testMethod3"/>
+          <include name="testMethod2"/>
         </methods>
-      </class> <!-- crossBrowserTestingPackage.CrossBrowserTesting -->
+      </class> <!-- ExtentReportsUsingITestListenerInterface.TestCaseClass -->
     </classes>
-  </test> <!-- TestOnFirefox(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

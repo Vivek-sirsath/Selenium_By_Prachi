@@ -29,12 +29,12 @@ public class ExtentListenerClass implements ITestListener {
 	
 	public void configureReport() {
 		
-		htmlReporter = new ExtentSparkReporter("Extent Report Using ITestListener");
+		htmlReporter = new ExtentSparkReporter("Extent Report Using ITestListener\\ExtentReportUsingITestListener.html");
+		// above is the path of Extent Report in the Project Directory.
 		reports = new ExtentReports();
 		reports.attachReporter(htmlReporter);
 		
-		// Add System/Environment information to reports
-		
+		// Add System/Environment information to reports		
 		reports.setSystemInfo("Localhost", "LenovoPC");
 		reports.setSystemInfo("OS", "Windows10");
 		reports.setSystemInfo("User", "Vivek");
