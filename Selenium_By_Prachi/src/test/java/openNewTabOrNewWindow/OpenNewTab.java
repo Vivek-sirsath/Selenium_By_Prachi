@@ -1,5 +1,6 @@
 package openNewTabOrNewWindow;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,11 @@ public class OpenNewTab {
 		System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
+		// Because using Selenium Version 4.15.0, below line won't work
+		// Below line works fine when we use Selenium Version 3
+		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get("https://www.google.com/");
 		
