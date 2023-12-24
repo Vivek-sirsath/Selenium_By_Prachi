@@ -25,7 +25,7 @@ public class CrossBrowserTesting {
 
 		switch (browser.toLowerCase()) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "E:\\Educational\\chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 
