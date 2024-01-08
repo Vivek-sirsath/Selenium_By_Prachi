@@ -1,5 +1,6 @@
 package webTableHandling;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -23,7 +24,8 @@ public class StaticTable1 {
 				System.setProperty("webdriver.chrome.driver","E:\\EDUCATIONAL\\chromedriver.exe");
 				WebDriver driver = new ChromeDriver();
 				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);   // Selenium 3
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); // Selenium 4
 				driver.get("https://testautomationpractice.blogspot.com/");
 				
 				// Let the control to find the WebTable

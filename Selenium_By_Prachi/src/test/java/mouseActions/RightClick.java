@@ -1,5 +1,6 @@
 package mouseActions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -16,7 +17,8 @@ public class RightClick {
 				System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
 				WebDriver driver = new ChromeDriver();
 				driver.manage().window().maximize();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);   // Selenium 3
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); // Selenium 4
 				driver.get("https://demoqa.com/buttons");
 				
 				// right(context) click on right click button

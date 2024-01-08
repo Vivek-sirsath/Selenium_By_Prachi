@@ -1,5 +1,6 @@
 package slider;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -15,7 +16,8 @@ public class Slider1 {
 		System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);   // Selenium 3
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); // Selenium 4
 		driver.get("https://testautomationpractice.blogspot.com/");
 		
 		WebElement slider =driver.findElement(By.xpath("//span[@tabindex='0']"));
