@@ -26,7 +26,7 @@ public class ElementClickInterceptedException {
 		Thread.sleep(3000);
 
 		driver.findElement(By.id("selenium143")).click();
-//		Here, the link is overlapped by the Blog menu options. So, link will not get clocked.
+//		Here, the link is overlapped by the Blog menu options. So, link will not get clicked.
 //		throwing the exception 'org.openqa.selenium.ElementClickInterceptedException' at Line No. 25
 
 		driver.close();
