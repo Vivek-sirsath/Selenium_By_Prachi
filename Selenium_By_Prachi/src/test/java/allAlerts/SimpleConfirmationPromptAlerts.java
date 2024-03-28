@@ -10,7 +10,7 @@ public class SimpleConfirmationPromptAlerts {
 
 	public static void main(String[] args) throws Exception {
 		
-		// Launch the chrome browser instance
+		        // Launch the chrome browser instance
 				System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
 				WebDriver driver = new ChromeDriver();
 				driver.manage().window().maximize();
