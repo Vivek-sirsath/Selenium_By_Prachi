@@ -1,0 +1,16 @@
+HTTP Cookie :-
+-------------
+
+A HTTP cookie is comprised of user information and their preferences.
+It is a small piece of data sent from web application and stored inn web browser, while user browses the web-site.
+
+Method  to handle with cookies :-
+1) driver.manage().getCookies();               -----> Returns the list of all cookies.
+2) driver.manage().getCookieNamed(arg0);     -----> Return specific name according to name
+3) driver.manage().addCookie(arg0);          -----> Create and add cookie
+4) driver.manage().deleteCookie(arg0);       -----> Delete specific cookie
+5) driver.manage().deleteCookieNamed(arg0);  -----> Delete specific cookie according to name
+6) driver.manage().deleteAllCookies();       -----> Delete all cookies
+
+
+
