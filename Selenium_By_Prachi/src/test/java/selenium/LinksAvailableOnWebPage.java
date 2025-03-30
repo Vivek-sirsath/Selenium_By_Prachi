@@ -19,7 +19,7 @@ public class LinksAvailableOnWebPage {
 		
 		List<WebElement> abc = driver.findElements(By.tagName("a"));
 		int num = abc.size();
-		System.out.println("Total no. of linkss: " + num);
+		System.out.println("Total no. of links: " + num);
 		
 		for (int i = 0; i <= num-1; i++) {
 			String c = abc.get(i).getText();
