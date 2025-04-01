@@ -2,8 +2,6 @@ package switchBetweenTabsAndWindows;
 
 import java.util.ArrayList;
 
-import javax.swing.plaf.basic.BasicTabbedPaneUI.TabSelectionHandler;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
