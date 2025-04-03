@@ -1,9 +1,12 @@
 
 /* 
    StaleElementReferenceException: This exception throws if the element become stale(Not Fresh)
+   
+   This comes if - The element has been removed from the DOM or the page has been refreshed after the element was located.
+   
    1) Once we locate the element and performed some action on it.
    2) Then the page is changed or reloaded by any how. Suppose we go to another page by link
-   3) If we navigated back to previous page an used the already created reference object of that element
+   3) If we navigated back to previous page and used the already created reference object of that element
       to locate and try to perform another action on it.
    4) Then, that reference will not work, we'll not able to perform operation on it.
    5) Rather, this will throw the exception of 'StaleElementReferenceException'
