@@ -37,7 +37,7 @@ public class StaleElementReferenceException {
 		
 		textFieldArea.sendKeys("Vivek Sirsath");
 		
-		driver.findElement(By.linkText("open cart")).click();
+		driver.findElement(By.id("name")).click();
 		Thread.sleep(3000);		
 		driver.navigate().back();
 		
