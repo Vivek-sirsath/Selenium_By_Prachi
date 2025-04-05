@@ -29,29 +29,29 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class FixStaleElementReferenceException2 {
 
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://testautomationpractice.blogspot.com/");
-		
+
 		WebElement textFieldArea = driver.findElement(By.id("name"));
-		
+
 		textFieldArea.sendKeys("Vivek Sirsath");
-		
+
 		driver.navigate().refresh();
-		
+
 		Thread.sleep(3000);
-		
+
 		WebElement textFieldArea2 = driver.findElement(By.id("name"));
-		
+
 		textFieldArea2.sendKeys("Ishita Shirsath");
 		Thread.sleep(3000);
-		
+
 		textFieldArea2.clear(); // Exception at this line will not come
-		
+
 		Thread.sleep(5000);
-		
+
 		driver.close();
 
 	}
