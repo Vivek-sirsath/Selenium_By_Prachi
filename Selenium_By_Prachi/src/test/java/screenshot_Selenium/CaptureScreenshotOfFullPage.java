@@ -21,7 +21,7 @@ public class CaptureScreenshotOfFullPage {
 		driver.manage().window().maximize();
 
 		// OpenUrl
-		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.get("https://time.is/IST");
 
 		// 1) Capture screenshot of FULL page 
  
@@ -31,11 +31,12 @@ public class CaptureScreenshotOfFullPage {
 		// STEP 2: Call getScreenshotAs() method to create image file
 		File src = screenshot.getScreenshotAs(OutputType.FILE);
 
-		File dest = new File(
-				"C:\\Users\\Admin\\git\\Selenium_By_Prachi\\Selenium_By_Prachi\\screenshots\\FullPageScreenShot.png");
+		File dest = new File(System.getProperty("user.dir")+"\\screenshots\\FullPageScreenShot.png");
 
 		// STEP 3: Copy source image file to destination using Apache Commons-IO
 		FileUtils.copyFile(src, dest);
+		
+		driver.close();
 			
 	}
 
