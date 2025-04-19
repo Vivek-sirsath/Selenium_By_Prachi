@@ -38,7 +38,7 @@ public class BrokenLinks {
 
 			try {
 
-				URL urlLink = new URL(url);
+				URL urlLink = new URL(url); // Exception - MalformedURLException
 
 				HttpURLConnection connectionObj = (HttpURLConnection) urlLink.openConnection(); // Type casting
 				/*
@@ -50,7 +50,7 @@ public class BrokenLinks {
 				 * at brokenLinksDeadLinks.BrokenLinks.main(BrokenLinks.java:41)
 				 */
 
-				connectionObj.setRequestMethod("HEAD");
+				connectionObj.setRequestMethod("HEAD"); // Exception - IOException
 				connectionObj.connect();
 
 				resCode = connectionObj.getResponseCode();
