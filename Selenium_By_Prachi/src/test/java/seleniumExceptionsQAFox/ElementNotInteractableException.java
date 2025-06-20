@@ -4,11 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ElementNotInteractableException {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "E:\\Educational\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+//		System.setProperty("webdriver.chrome.driver", "E:\\Educational\\chromedriver.exe");
+//		Exception in thread "main" org.openqa.selenium.SessionNotCreatedException: Could not start a new session. 
+//		Response code 500. 
+//		Message: session not created: This version of ChromeDriver only supports Chrome version 131
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
