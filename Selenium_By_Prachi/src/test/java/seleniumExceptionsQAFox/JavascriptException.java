@@ -29,7 +29,12 @@ public class JavascriptException {
 
 		// using JavaScript enter the text in the 'textAreaField1'
 		JavascriptExecutor jse = (JavascriptExecutor) driver; // Type Casting
-		jse.executeScript("arguments[0.value = 'Vivek Sirsath'", textAreaField1); // Exception at this line
+
+		// Wrong syntax in JavaScript gives exception.
+//		jse.executeScript("arguments[0.value = 'Vivek Sirsath'", textAreaField1); // Exception at this line
+
+		// Correct syntax to handle JavaScript exception.
+		jse.executeScript("arguments[0].value = 'Vivek Sirsath'", textAreaField1);
 
 	}
 
