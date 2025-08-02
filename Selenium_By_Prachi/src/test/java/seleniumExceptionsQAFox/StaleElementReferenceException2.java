@@ -41,7 +41,7 @@ public class StaleElementReferenceException2 {
 
 		driver.navigate().refresh();
 
-		textFieldArea.sendKeys("Ishita Shirsath");
+		textFieldArea.sendKeys("Ishita Shirsath"); // At this line - StaleElementReferenceException
 		Thread.sleep(3000);
 
 		textFieldArea.clear(); // Exception at this line
