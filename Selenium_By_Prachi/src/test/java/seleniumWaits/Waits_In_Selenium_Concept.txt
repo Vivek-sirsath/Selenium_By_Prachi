@@ -1,0 +1,50 @@
+
+# Waits in Selenium :-
+  -----------------
+
+- We use waits to solve synchronization issues while execution.
+
+- Synchronization :-
+  ---------------
+  Process of matching test automation tool speed with the speed of AUT (Application Under Test) is Synchronization.
+
+- Whenever webdriver tries to perform the operation on web element which is not loaded in AUT, in such case,
+  webdriver will throw exception. Such as, "NoSuchElementException" OR "ElementNotVisibleException."
+- This happens due to synchronization issues.  
+
+===========================================================================================================
+
+1) Implicit Wait :-
+   -------------
+- This wait is not WebElement specific. It is applicable for all web elements.
+- Control will wait for the specified time before throwing an Exception.
+
+           driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); // Selenium 3.0
+		   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Selenium 4.0  
+		    
+ ===========================================================================================================
+ 
+ 2) Explicit Wait :-
+    -------------
+- This is web element specific wait means this wait is applicable for specific web element not for all elements.   
+- This is for those web elements which takes more time to load.    
+
+           WebDriverWait wt = new WebDriverWait(driver, Duration.ofSeconds(10));
+           wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='firstName']"))).click();
+           
+===========================================================================================================
+
+3) Fluent Wait :-
+
+           Wait<WebDriver> wt = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(10))
+				.pollingEvery(Duration.ofSeconds(2))
+				.ignoring(NoSuchElementException.class);
+				
+				
+		   wt.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='firstName']"))).sendKeys("Vivek");	
+
+
+
+
+           
