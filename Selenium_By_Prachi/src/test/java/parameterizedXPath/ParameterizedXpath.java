@@ -14,7 +14,7 @@ public class ParameterizedXpath {
 		driver.get("https://www.phptravels.net/flights");
 		Thread.sleep(15000);
 		/*
-		 * // Below way we are repeating the code, just values in xpath arre changing
+		 * // Below way we are repeating the code, just values in xpath are changing
 		 * 
 		 * driver.findElement(By.xpath("//a[text()='Hotels']")).click();
 		 * Thread.sleep(5000);
@@ -26,7 +26,7 @@ public class ParameterizedXpath {
 		 * Thread.sleep(5000);
 		 */
 		
-		commonXPath(driver, "Tours"); // calling static method
+		commonXPath(driver, "Tours"); // calling static method and passing the arguments.
 		commonXPath(driver, "Hotels");
 		commonXPath(driver, "Flights");
 		
