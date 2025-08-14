@@ -13,7 +13,7 @@ public class CaptureScreenshotofWebElement {
 
 	public static void main(String[] args) throws Exception {
 		
-		// Launch chrome browser
+		        // Launch chrome browser
 				System.setProperty("webdriver.chrome.driver", "E:\\Educational\\chromedriver.exe");
 				WebDriver driver = new ChromeDriver();
 
