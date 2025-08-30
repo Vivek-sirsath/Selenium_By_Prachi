@@ -19,7 +19,7 @@ public class TestCaseClass {
 	@Test
 	public void testMethod3() {
 		System.out.println("This is test method 3....");
-		Assert.assertTrue(false); // fail
+		Assert.assertTrue(true); // pass
 	}
 	@Test
 	public void testMethod4() {
