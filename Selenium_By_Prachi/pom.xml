@@ -68,6 +68,12 @@
 			<version>2.11.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java5</artifactId>
+			<version>5.81.6</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
