@@ -29,7 +29,7 @@ public class UsingSendkeysMethod {
 		Thread.sleep(3000);
 		
 		// 3rd WAY - Using Java script By passing 'element' as reference to arguments	
-		// Instead of documents we've to use arguments
+		// Instead of 'document' we've to use 'argument'
 //		jse.executeScript("argument[0].value='sendkeys'", element);
 //		driver.navigate().back();
 //		Thread.sleep(3000);
