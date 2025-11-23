@@ -6,7 +6,8 @@
 
 - Synchronization :-
   ---------------
-  Process of matching test automation tool speed with the speed of AUT (Application Under Test) is Synchronization.
+
+- Process of matching test automation tool (Selenium) speed with the speed of AUT (Application Under Test) is Synchronization.
 
 - Whenever webdriver tries to perform the operation on web element which is not loaded in AUT, in such case,
   webdriver will throw exception. Such as, "NoSuchElementException" OR "ElementNotVisibleException."

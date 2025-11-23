@@ -15,9 +15,9 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class BasicExtentReport {
 
-	ExtentSparkReporter htmlReporter;
-	ExtentReports reports;
-	ExtentTest test;
+	ExtentSparkReporter htmlReporter; // UI of the report
+	ExtentReports reports; // populate common info on report
+	ExtentTest test; // Create test case entries in report and update status-pass/fail/skip in report
 
 	@BeforeTest
 	public void configureReport() {
@@ -84,7 +84,7 @@ public class BasicExtentReport {
 
 	}
 
-	@AfterMethod // This method should exec after exec of all test methods
+	@AfterMethod // This method should execute after execution of all test methods
 	public void getTestResult(ITestResult result) {
 
 		if (result.getStatus() == ITestResult.FAILURE) {

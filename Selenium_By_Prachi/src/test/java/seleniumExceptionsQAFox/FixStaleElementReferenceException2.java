@@ -43,7 +43,8 @@ public class FixStaleElementReferenceException2 {
 
 		Thread.sleep(3000);
 
-		// Fixing the 'StaleElementReferenceException' by locating the web element again after refresh.
+		// Fixing the 'StaleElementReferenceException' by locating the web element again after refreshing the web page.
+
 		WebElement textFieldArea2 = driver.findElement(By.id("name"));
 
 		textFieldArea2.sendKeys("Ishita Shirsath"); // Exception at this line will not come

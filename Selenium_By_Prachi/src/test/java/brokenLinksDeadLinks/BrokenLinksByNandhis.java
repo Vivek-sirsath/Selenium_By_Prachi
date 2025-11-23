@@ -32,7 +32,7 @@ public class BrokenLinksByNandhis {
 		System.out.println("No. of links:- " + allLinks.size());
 
 //		STEP 2 :- Eliminate the duplicate URLs
-		Set<String> s = new HashSet<>();
+		Set<String> s = new HashSet<String>();
 
 		for (WebElement e : allLinks) {
 			String link = e.getAttribute("href");

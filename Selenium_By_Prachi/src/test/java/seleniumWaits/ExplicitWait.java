@@ -41,7 +41,9 @@ public class ExplicitWait {
             System.out.println(e.getMessage());
             System.out.println("Elapsed time :- " + watch.elapsed(TimeUnit.SECONDS));
 		}
-        
+		
+		System.out.println("Successfully ended the program...");
+        driver.quit();
 	}
 
 }
