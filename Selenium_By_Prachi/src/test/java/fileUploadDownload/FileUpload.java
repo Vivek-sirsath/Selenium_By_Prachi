@@ -12,12 +12,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class FileUpload {
 
 	public static void main(String[] args) throws AWTException {
 
 		// Launch chrome browser
-		System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver", "E:\\EDUCATIONAL\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demoqa.com/upload-download");
@@ -59,6 +62,8 @@ public class FileUpload {
 		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		System.out.println("File Uploaded Successfully");
+		
+		driver.quit();
 	}
 
 }
